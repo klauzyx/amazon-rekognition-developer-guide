@@ -182,8 +182,8 @@ You can provide the input image as an image byte array \(base64\-encoded image b
                bool hasAll = detectFacesRequest.Attributes.Contains("ALL");
                foreach(FaceDetail face in detectFacesResponse.FaceDetails)
                {
-                   Console.WriteLine("BoundingBox: top={0} left={1} width={2} height={3}", face.BoundingBox.Left,
-                       face.BoundingBox.Top, face.BoundingBox.Width, face.BoundingBox.Height);
+                   Console.WriteLine("BoundingBox: top={0} left={1} width={2} height={3}", face.BoundingBox.Top,
+                       face.BoundingBox.Left, face.BoundingBox.Width, face.BoundingBox.Height);
                    Console.WriteLine("Confidence: {0}\nLandmarks: {1}\nPose: pitch={2} roll={3} yaw={4}\nQuality: {5}",
                        face.Confidence, face.Landmarks.Count, face.Pose.Pitch,
                        face.Pose.Roll, face.Pose.Yaw, face.Quality);
